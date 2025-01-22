@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Checker</title>
     <script src="./passwordChecker.js" defer></script>
+    <link href="index.css" rel="stylesheet">
   </head>
   <body>
-    <div>
-      <label>Password:</label>
-      <input type="text" id="password" />
-      <button id="submitBtn">Check Password</button>
-    </div>
-    <div>
-      <p id="message"></p>
+    <div class="password-container">
+      <h1>Password Checker</h1>
+      <div class="password-form">
+
+          <label>Enter Password:</label>
+          <input type="text" id="password" />
+          <button id="submitBtn">Check Password</button>
+
+      </div>        
+
+        <p id="message-failed"></p>
+        <p id="message-success"></p>
+
+
     </div>
   </body>
 </html>
